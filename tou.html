@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script>
+		// $(function(){
+		// 	// $('.btn1').click(function() {
+				
+		// 	$('.asf:p').css("background-color","#B2E0FF");
+				
+				
+		// 	$("p").html("Hello <b>world!</b>")
+		// 		}
+		// 	// });
+
+		        //筛选按钮(折叠层显示事件)
+        // $(function(){
+        // 	$("#btn1").click(function(event) {
+        //     	($(".clsContent").is(":hidden")) {
+        //         $(".clsContent").show();
+        //         //将筛选改为收起
+        //         	$("#btn1").html("收起");
+        //     	}
+        //     	else {
+        //         //折叠层隐藏
+        //         	$(".clsContent").hide();
+        //         //将收起改为筛选
+        //         	$("#btn1").html("筛选");
+        //     	}
+        // 	});
+            
+        // }
+        $(function(){
+            $("#b1").click(function(){
+            // $("ul").hide();
+            $('.clsContent').css('display','none');
+           $('span img').attr('src','D:\arrow-down-bold.png');
+            });
+            $("#b2").click(function(){
+            // $("ul").show();
+            $('.clsContent').css('display','block');
+            });
+        });
+		
+	</script>
+	<style>
+		img{
+			height: 10px;
+			width: 10px;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<input type="button" name="name" value="按钮一" id="b1">
+	<input type="button" name="name" value="按钮一" id="b2">
+
+	<div id="divFrame">
+		<div class="clsHead">
+			<h3>图书分类</h3>
+			<!-- <span><img src="D:\arrow-up-bold.png" alt=""></span> -->
+		</div>
+		<div class="clsContent">
+			<ul>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+				<li><a href="">123</a></li>
+			</ul>
+			<div class="clsBot">
+				<a href="">简化</a>
+				<!-- <img src="D:\arrow-up-bold.png" alt=""> -->
+			</div>
+		</div>
+	</div>
+	 <span><img src="D:\arrow-up-bold.png" alt=""></span>
+
+</body>
+</html>
